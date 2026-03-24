@@ -6,25 +6,18 @@ export default function GyanKendra({ onSelectModule, onExploreVillage }) {
   const { language, completedModules, arthaScore } = useFinancials();
 
   const t = {
-    hi: {
-      title: 'ज्ञान केंद्र',
-      subtitle: 'सफलता की ओर आपका पहला कदम',
-      start: 'सीखें',
-      completed: 'पूर्ण',
-      score: 'आपका स्कोर',
-      explore: 'गाँव घूमें ➔'
-    },
-    en: {
-      title: 'Gyan Kendra',
-      subtitle: 'Your first step to success',
-      start: 'Learn',
-      completed: 'Done',
-      score: 'Your Score',
-      explore: 'Explore Village ➔'
-    }
+    hi: { title: 'ज्ञान केंद्र', subtitle: 'सफलता की ओर आपका पहला कदम', start: 'सीखें', completed: 'पूर्ण', score: 'आपका स्कोर', explore: 'गाँव घूमें ➔' },
+    en: { title: 'Gyan Kendra', subtitle: 'Your first step to success', start: 'Learn', completed: 'Done', score: 'Your Score', explore: 'Explore Village ➔' },
+    mr: { title: 'ज्ञान केंद्र', subtitle: 'यशस्वी होण्यासाठी तुमचे पहिले पाऊल', start: 'शिका', completed: 'पूर्ण', score: 'तुमचा स्कोर', explore: 'गाव पाहा ➔' },
+    gu: { title: 'જ્ઞાન કેન્દ્ર', subtitle: 'સફળતા તરફ તમારું પહેલું ડગલું', start: 'શીખો', completed: 'પૂર્ણ', score: 'તમારો સ્કોર', explore: 'ગામની મુલાકાત ➔' },
+    bh: { title: 'ज्ञान केंद्र', subtitle: 'सफलता के ओर राउर पहिला कदम', start: 'सीखीं', completed: 'पूरा', score: 'राउर स्कोर', explore: 'गाँव घूमीं ➔' },
+    bn: { title: 'জ্ঞান কেন্দ্র', subtitle: 'সফলতার দিকে আপনার প্রথম পদক্ষেপ', start: 'শিখুন', completed: 'সম্পন্ন', score: 'আপনার স্কোর', explore: 'গ্রাম দেখুন ➔' },
+    te: { title: 'జ్ఞాన కేంద్రం', subtitle: 'విజయానికి మీ మొదటి అడుగు', start: 'నేర్చుకోండి', completed: 'పూర్తయింది', score: 'మీ స్కోర్', explore: 'గ్రామాన్ని సందర్శించండి ➔' },
+    ta: { title: 'ஞான கேந்திரா', subtitle: 'வெற்றியை நோக்கிய உங்கள் முதல் படி', start: 'கற்றுக்கொள்ளுங்கள்', completed: 'முடிந்தது', score: 'உங்கள் மதிப்பெண்', explore: 'கிராமத்தை ஆராயுங்கள் ➔' },
+    kn: { title: 'ಜ್ಞಾನ ಕೇಂದ್ರ', subtitle: 'ಯಶಸ್ಸಿನೆಡೆಗೆ ನಿಮ್ಮ ಮೊದಲ ಹೆಜ್ಜೆ', start: 'ಕಲಿಯಿರಿ', completed: 'ಪೂರ್ಣ', score: 'ನಿಮ್ಮ ಸ್ಕೋರ್', explore: 'ಗ್ರಾಮ ವೀಕ್ಷಿಸಿ ➔' }
   }[language] || {
     title: 'Gyan Kendra',
-    subtitle: 'Your first step towards success',
+    subtitle: 'Your first step to success',
     start: 'Learn',
     completed: 'Done',
     score: 'Your Score',

@@ -27,7 +27,13 @@ export default function GameController() {
 
   const handleProfileSelect = (profile) => {
     setSelectedProfile(profile);
-    setOnboardingScreen('setup');
+    setFarmerProfile({ 
+      profession: profile, 
+      land: null, 
+      income: null, 
+      name: profile === 'farming' ? 'Farmer' : 'Villager' 
+    });
+    setCurrentView('GYAN_KENDRA');
   };
 
   const handleProfileComplete = (setupData) => {
@@ -67,7 +73,6 @@ export default function GameController() {
             <>
               {onboardingScreen === 'language' && <LanguageSelector onSelect={handleLanguageSelect} />}
               {onboardingScreen === 'profile' && <ProfileSelector language={language} onSelect={handleProfileSelect} />}
-              {onboardingScreen === 'setup' && <ProfileSetup language={language} onProfileComplete={handleProfileComplete} />}
             </>
           )}
 

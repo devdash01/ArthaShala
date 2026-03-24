@@ -45,7 +45,13 @@ export const TRANSLATIONS = {
     share_otp: "OTP साझा करें (खतरा)",
     buy_excess_urea: "अतिरिक्त यूरिया खरीदें",
     enroll_pmsym: "PM-SYM नामांकन",
-    apply_mudra: "मुद्रा (MUDRA) लोन"
+    apply_mudra: "मुद्रा (MUDRA) लोन",
+    sell_vegetables: "सब्जियां बेचें", bus_ticket: "बस टिकट (शहर)", tractor_service: "ट्रैक्टर सर्विस", tea_snacks: "चाय-नाश्ता",
+    kcc_loan_label: "KCC लोन लें (4%)", safe_affordable: "सुरक्षित और सस्ता", not_now: "अभी नहीं", 
+    sahukar_loan_label: "साहूकार से कर्ज (24%)", debt_trap_warning: "कर्ज जाल का खतरा", 
+    go_to_bank: "बैंक जाएं (4%)", better_choice: "बेहतर विकल्प",
+    bank_loan: "बैंक ऋण", sahukar_loan: "साहूकार का कर्ज", decide_wisely: "सोच-समझकर फैसला लें",
+    wallet: "बटुआ", score: "स्कोर", debt: "कर्ज", live: "लाइव"
   },
 
   // ── Marathi ───────────────────────────────────────
@@ -64,7 +70,7 @@ export const TRANSLATIONS = {
     cattle_market: "पशु मंडी", dairy: "डेअरी", bank: "बँक", post_office: "पोस्ट ऑफिस",
     shg: "SHG केंद्र", moneylender: "सावकार", medical: "दवाखाना", school: "शाळा",
     temple: "मंदिर", panchayat: "पंचायत", market: "मंडी", vegetable: "भाजी मंडई",
-    bus_stand: "बस स्थानక", mobile_tower: "मोबाईल टॉवर", workshop: "वर्कशॉप", tea_stall: "चहाची टपरी",
+    bus_stand: "बस स्थानक", mobile_tower: "मोबाईल टॉवर", workshop: "वर्कशॉप", tea_stall: "चहाची टपरी",
     today_mandi_rate: "आजचा मंडी दर", maize: "मक्का", paddy: "धान", quintal: "क्विंटल",
     sell_maize: "मक्का विका", sell_paddy: "धान विका", seed_prep: "बियाणे खरेदीची तयारी",
     save_deposit: "बचत (जमा करा)", withdraw: "पैसे काढा", kcc_loan: "KCC कर्ज",
@@ -82,7 +88,13 @@ export const TRANSLATIONS = {
     tv_radio: "टीव्ही/रेडिओ", treatment: "उपचार", ayushman_benefit: "आयुष्मान भारत लाभ",
     school_fee: "शाळेची फी", scholarship: "शिष्यवृत्ती", donation: "देणगी",
     mgnrega_wages: "मनरेगा मजुरी", pm_kisan_benefit: "PM-किसान लाभ",
-    voice_hint: "पर्याय निवडा किंवा निर्णय बोला..."
+    voice_hint: "पर्याय निवडा किंवा निर्णय बोला...",
+    sell_vegetables: "भाज्या विका", bus_ticket: "बस तिकीट (शहर)", tractor_service: "ट्रॅक्टर सर्विस", tea_snacks: "चहा-नाश्ता",
+    kcc_loan_label: "KCC कर्ज घ्या (4%)", safe_affordable: "सुरक्षित आणि स्वस्त", not_now: "आता नको", 
+    sahukar_loan_label: "सावकराकडून कर्ज (24%)", debt_trap_warning: "कर्ज विळख्याचा धोका", 
+    go_to_bank: "बँकेत जा (4%)", better_choice: "उत्तम पर्याय",
+    bank_loan: "बँक कर्ज", sahukar_loan: "सावकाराचे कर्ज", decide_wisely: "सावधपणे निर्णय घ्या",
+    wallet: "पाकीट", score: "स्कोर", debt: "कर्ज", live: "लाईव्ह"
   },
 
   // ── English ───────────────────────────────────────
@@ -130,7 +142,13 @@ export const TRANSLATIONS = {
     share_otp: "Share OTP (Danger)",
     buy_excess_urea: "Buy Excess Urea",
     enroll_pmsym: "Enroll in PM-SYM",
-    apply_mudra: "Apply for MUDRA Loan"
+    apply_mudra: "Apply for MUDRA Loan",
+    sell_vegetables: "Sell Vegetables", bus_ticket: "Bus Ticket (City)", tractor_service: "Tractor Service", tea_snacks: "Tea & Snacks",
+    kcc_loan_label: "Take KCC Loan (4%)", safe_affordable: "Safe and affordable", not_now: "Not now", 
+    sahukar_loan_label: "Sahukar Loan (24%)", debt_trap_warning: "Debt trap risk!", 
+    go_to_bank: "Go to Bank (4%)", better_choice: "Better choice",
+    bank_loan: "Bank Loan", sahukar_loan: "Sahukar Loan", decide_wisely: "Decide wisely",
+    wallet: "Wallet", score: "Score", debt: "Debt", live: "LIVE"
   },
 
   // ── Gujarati ──────────────────────────────────────
@@ -144,12 +162,36 @@ export const TRANSLATIONS = {
     panchayat_intervention: "પંચાયત હસ્તક્ષેપ",
     pm_kisan_msg: "ખેડૂત ભાઈ, તમે PM-કિસાન સમ્માન નિધિ માટે પાત્ર છો. ₹6,000 ની સહાય મળશે.",
     add_bank_account: "ખાતું ઉમેરો અને લાભ લો", ledger: "ચોપડો", net_worth: "કુલ સંપત્તિ", last_sync: "છેલ્લે સિંક",
-    home: "ઘર", neighbor1: "ઘર ૧", neighbor2: "ઘર ૨", grocery: "કરિયાણા", cloth_shop: "કપડાની દુકાન",
+    home: "ઘર", neighbor1: "ઘર ૧", neighbor2: "ઘર ૨", grocery: "કરિયાણા", cloth_shop: "कपडानी दुकान",
     electronics: "ઇલેક્ટ્રોનિક્સ", farm: "ખેતર", seed_shop: "બિયારણ", fertilizer: "ખાતર",
     cattle_market: "પશુ મંડી", dairy: "ડેરી", bank: "બૅન્ક", post_office: "પોસ્ટ ઓફિસ",
     shg: "SHG કેન્દ્ર", moneylender: "શાહુકાર", medical: "દવાખાનું", school: "શાળા",
     temple: "મંદિર", panchayat: "પંચાયત", market: "મંડી", vegetable: "શાક-ભાજી",
-    bus_stand: "બસ સ્ટેન્ડ", mobile_tower: "મોબાઇલ ટૉવર", workshop: "વર્કશોપ", tea_stall: "ચ્હાની દુકાન"
+    bus_stand: "બસ સ્ટેન્ડ", mobile_tower: "મોબાઇલ ટૉવર", workshop: "વર્કશોપ", tea_stall: "ચ્હાની દુકાન",
+    today_mandi_rate: "આજના મંડી દર", maize: "મકાઈ", paddy: "ડાંગર", quintal: "ક્વિન્ટલ",
+    sell_maize: "મકાઈ વેચો", sell_paddy: "ડાંગર વેચો", seed_prep: "બિયારણ ખરીદીની તૈયારી",
+    save_deposit: "બચત (જમા)", withdraw: "પૈસા ઉપાડો", kcc_loan: "KCC લોન",
+    fixed_deposit: "ફિક્સ્ડ ડિપોઝિટ", repay_loan: "લોન ચૂકવો", withdraw_pension: "પેન્શન ઉપાડો",
+    shg_deposit: "SHG બચત જમા", shg_loan: "SHG લોન (12%)", shg_interest: "વ્યાજ આવક",
+    emergency_loan: "ઇમરજન્સી લોન (24%)", repay_with_interest: "વ્યાજ સાથે ચૂકવો",
+    sell_harvest: "પાક વેચો", farming_expenses: "ખેતી ખર્ચ", hire_labor: "મજૂર રાખો",
+    basic_seeds: "સામાન્ય બિયારણ", hybrid_seeds: "હાઇબ્રિડ બિયારણ", fertilizer_bag: "ખાતરની થેલી",
+    organic_manure: "જૈવિક ખાતર", buy_cow: "ગાય ખરીદો", buy_buffalo: "ભેંસ ખરીદો",
+    sell_livestock: "પશુ વેચો", milk_sell_daily: "દૂધ વેચો (દૈનિક)", milk_sell_bulk: "જથ્થાબંધ દૂધ વેચો",
+    cattle_feed: "પશુ આહાર", action_rent: "ભાડું", maintenance: "જાળવણી",
+    remittance: "મોકલેલા પૈસા", lend_money: "પૈસા ઉધાર આપો", borrow_money: "પૈસા ઉધાર લો",
+    groceries: "કરિયાણું ખરીદો", credit_purchase: "ઉધાર ખરીદી", bulk_purchase: "જથ્થાબંધ ખરીદી",
+    buy_clothes: "કપડાં ખરીદો", festival_clothes: "તહેવારના કપડાં", mobile_phone: "મોબાઇલ ફોન",
+    tv_radio: "ટીવી/રેડિયો", treatment: "સારવાર", ayushman_benefit: "આયુષ્માન ભારત લાભ",
+    school_fee: "શાળા ફી", scholarship: "શિષ્યવૃત્તિ", donation: "દાન",
+    mgnrega_wages: "મનરેગા મજૂરી", pm_kisan_benefit: "PM-કિસાન લાભ",
+    voice_hint: "વિકલ્પ પસંદ કરો અથવા બોલો...",
+    sell_vegetables: "શાકભાજી વેચો", bus_ticket: "બસ ટિકિટ (શહેર)", tractor_service: "ટ્રેક્ટર સર્વિસ", tea_snacks: "ચા-નાસ્તો",
+    kcc_loan_label: "KCC લોન લો (4%)", safe_affordable: "સુરક્ષિત અને સસ્તું", not_now: "અત્યારે નહીં", 
+    sahukar_loan_label: "શાહુકાર પાસેથી લોન (24%)", debt_trap_warning: "દેવાની જાળનો ખતરો!", 
+    go_to_bank: "બેંક જાઓ (4%)", better_choice: "વધારે સારો વિકલ્પ",
+    bank_loan: "બેંક લોન", sahukar_loan: "શાહુકારની લોન", decide_wisely: "વિચારીને નિર્ણય લો",
+    wallet: "વોલેટ", score: "સ્કોર", debt: "દેવું", live: "લાઈવ"
   },
 
   // ── Bhojpuri ──────────────────────────────────────
@@ -168,7 +210,15 @@ export const TRANSLATIONS = {
     cattle_market: "पशु मंडी", dairy: "डेयरी", bank: "बैंक", post_office: "डाकघर",
     shg: "SHG केंद्र", moneylender: "महाजन", medical: "अस्पताल", school: "इस्कूल",
     temple: "मंदिर", panchayat: "पंचायत", market: "मंडी", vegetable: "सब्जी मंडी",
-    bus_stand: "बस स्टैंड", mobile_tower: "मोबाइल टावर", workshop: "वर्कशॉप", tea_stall: "चाय दुकान"
+    bus_stand: "बस स्टैंड", mobile_tower: "मोबाइल टावर", workshop: "वर्कशॉप", tea_stall: "चाय दुकान",
+    save_deposit: "बचत (जमा करीं)", withdraw: "पइसा निकालीं", kcc_loan: "KCC कर्जा",
+    fixed_deposit: "फिक्स्ड डिपॉजिट", repay_loan: "कर्जा चुकाईं", sell_harvest: "फसल बेचीं",
+    sell_vegetables: "सब्जी बेचीं", bus_ticket: "बस टिकट (शहर)", tractor_service: "ट्रैक्टर सर्विस", tea_snacks: "चाय-नाश्ता",
+    kcc_loan_label: "KCC कर्जा लीं (4%)", safe_affordable: "सुरक्षित आ सस्ता", not_now: "अभी ना", 
+    sahukar_loan_label: "महाजन से कर्जा (24%)", debt_trap_warning: "कर्जा जाल के खतरा", 
+    go_to_bank: "बैंक जाईं (4%)", better_choice: "नीमन विकल्प",
+    bank_loan: "बैंक कर्जा", sahukar_loan: "महाजन के कर्जा", decide_wisely: "सोझ-समझ के फैसला लीं",
+    wallet: "बटुआ", score: "स्कोर", debt: "कर्जा", live: "लाइव"
   },
 
   // ── Bengali ───────────────────────────────────────
@@ -187,7 +237,14 @@ export const TRANSLATIONS = {
     cattle_market: "পশু বাজার", dairy: "ডেয়ারি", bank: "ব্যাংক", post_office: "ডাকঘর",
     shg: "SHG কেন্দ্র", moneylender: "মহাজন", medical: "হাসপাতাল", school: "স্কুল",
     temple: "মন্দির", panchayat: "পঞ্চায়েত", market: "মান্ডি", vegetable: "সবজি বাজার",
-    bus_stand: "বাস স্ট্যান্ড", mobile_tower: "মোবাইল টাওয়ার", workshop: "ওয়ার্কশপ", tea_stall: "চায়ের দোকান"
+    bus_stand: "বাস স্ট্যান্ড", mobile_tower: "মোবাইল টাওয়ার", workshop: "ওয়ার্কশপ", tea_stall: "চায়ের দোকান",
+    save_deposit: "সঞ্চয় (জমা)", withdraw: "টাকা তোলা", kcc_loan: "KCC ঋণ",
+    sell_harvest: "ফসল বিক্রি", sell_vegetables: "সবজি বিক্রি", bus_ticket: "বাস টিকিট (শহর)", tractor_service: "ট্রাক্টর সার্ভিস", tea_snacks: "চা-জলখাবার",
+    kcc_loan_label: "KCC ঋণ নিন (4%)", safe_affordable: "নিরাপদ ও সস্তা", not_now: "এখন নয়", 
+    sahukar_loan_label: "মহাজন থেকে ঋণ (24%)", debt_trap_warning: "ঋণের ফাঁদের ঝুঁকি!", 
+    go_to_bank: "ব্যাংকে যান (4%)", better_choice: "ভালো বিকল্প",
+    bank_loan: "ব্যাংক ঋণ", sahukar_loan: "মহাজনের ঋণ", decide_wisely: "ভেবে সিদ্ধান্ত নিন",
+    wallet: "ওয়ালেট", score: "স্কোর", debt: "ঋণ", live: "লাইভ"
   },
 
   // ── Telugu ────────────────────────────────────────
@@ -196,56 +253,58 @@ export const TRANSLATIONS = {
     farming: "వ్యవసాయం", trade: "వ్యాపారం", labor: "కూలి", others: "ఇతర / మాట్లాడండి",
     month: "నెల", sowing_time: "విత్తనాల సమయం", cash: "నగదు", loan: "అప్పు",
     bolo: "మాట్లాడండి", bolo_hint: "మాట్లాడండి మరియు సంపాదించండి",
-    i_want_to_buy_seeds: "నేను మండి నుండి విత్తనాలు కొనాలనుకుంటున్నాను",
-    purchase_seeds: "విత్తనాలు కొనండి", correct: "సరైనది", incorrect: "తప్పు",
-    panchayat_intervention: "పంచాయతీ జోక్యం",
-    pm_kisan_msg: "రైతు సోదరుడు, మీరు PM-కిసాన్ సమ్మాన్ నిధికి అర్హులు. ₹6,000 సహాయం అందుతుంది.",
-    add_bank_account: "ఖాతా జోడించండి & లాభం పొందండి", ledger: "లెడ్జర్", net_worth: "మొత్తం విలువ", last_sync: "చివరి సింక్",
-    home: "ఇల్లు", neighbor1: "ఇల్లు ౧", neighbor2: "ఇల్లు ౨", grocery: "కిరాణా", cloth_shop: "బట్టల దుకాణం",
+    home: "ఇల్లు", neighbor1: "ఇల్లు 1", neighbor2: "ఇల్లు 2", grocery: "కిరాణా", cloth_shop: "బట్టల దుకాణం",
     electronics: "ఎలక్ట్రానిక్స్", farm: "పొలం", seed_shop: "విత్తనాల దుకాణం", fertilizer: "ఎరువుల దుకాణం",
     cattle_market: "పశువుల మండి", dairy: "డెయిరీ", bank: "బ్యాంక్", post_office: "పోస్ట్ ఆఫీస్",
     shg: "SHG కేంద్రం", moneylender: "వడ్డీ వ్యాపారి", medical: "వైద్యశాల", school: "పాఠశాల",
     temple: "గుడి", panchayat: "పంచాయతీ", market: "మండి", vegetable: "కూరగాయల మండి",
-    bus_stand: "బస్ స్టాండ్", mobile_tower: "మొబైల్ టవర్", workshop: "వర్క్‌షాప్", tea_stall: "టీ కొట్టు"
+    bus_stand: "బస్ స్టాండ్", mobile_tower: "మొబైల్ టవర్", workshop: "వర్క్‌షాప్", tea_stall: "టీ కొట్టు",
+    save_deposit: "పొదుపు (డిపాజిట్)", withdraw: "నగదు విత్ డ్రా", kcc_loan: "KCC రుణం",
+    sell_harvest: "పంట విక్రయం", sell_vegetables: "కూరగాయల విక్రయం", bus_ticket: "బస్సు టికెట్ (సిటీ)", tractor_service: "ట్రాక్టర్ సర్వీస్", tea_snacks: "టీ & స్నాక్స్",
+    kcc_loan_label: "KCC రుణం తీసుకోండి (4%)", safe_affordable: "సురక్షితం మరియు చౌక", not_now: "ఇప్పుడు వద్దు", 
+    sahukar_loan_label: "వడ్డీ వ్యాపారి నుండి అప్పు (24%)", debt_trap_warning: "అప్పుల ఊబి ప్రమాదం!", 
+    go_to_bank: "బ్యాంకుకు వెళ్లండి (4%)", better_choice: "మంచి ఎంపిక",
+    bank_loan: "బ్యాంకు రుణం", sahukar_loan: "వడ్డీ వ్యాపారి అప్పు", decide_wisely: "తెలివిగా నిర్ణయించుకోండి",
+    wallet: "వాలెట్", score: "స్కోర్", debt: "అప్పు", live: "లైవ్"
   },
 
   // ── Tamil ─────────────────────────────────────────
   ta: {
     welcome: "வரவேற்கிறோம்", choose_language: "உங்கள் மொழியைத் தேர்ந்தெடுங்கள்",
-    farming: "விவசாயம்", trade: "வியாபாரம்", labor: "கூலி", others: "மற்றவை / பேசுங்கள்",
+    farming: "விவசாயம்", trade: "வியாபாரம்", labor: "కూలి", others: "மற்றவை / பேசுங்கள்",
     month: "மாதம்", sowing_time: "விதைப்பு நேரம்", cash: "பணம்", loan: "கடன்",
-    bolo: "பேசுங்கள்", bolo_hint: "பேசி சம்பாதியுங்கள்",
-    i_want_to_buy_seeds: "நான் மண்டியிலிருந்து விதைகளை வாங்க விரும்புகிறேன்",
-    purchase_seeds: "விதை வாங்குங்கள்", correct: "சரி", incorrect: "தவறு",
-    panchayat_intervention: "பஞ்சாயத்து தலையீடு",
-    pm_kisan_msg: "விவசாயி சகோதரா, நீங்கள் PM-கிசான் சம்மான் நிதிக்கு தகுதியானவர். ₹6,000 கிடைக்கும்.",
-    add_bank_account: "கணக்கு சேர்த்து பயன்பெறுங்கள்", ledger: "ஏடு", net_worth: "மொத்த சொத்து", last_sync: "கடைசி ஒத்திசைவு",
-    home: "வீடு", neighbor1: "வீடு ௧", neighbor2: "வீடு ௨", grocery: "மளிகை", cloth_shop: "துணிக் கடை",
+    home: "வீடு", neighbor1: "வீடு 1", neighbor2: "வீடு 2", grocery: "மளிகை", cloth_shop: "துணிக் கடை",
     electronics: "மின்னணுவியல்", farm: "வயல்", seed_shop: "விதை கடை", fertilizer: "உரக் கடை",
     cattle_market: "கால்நடை சந்தை", dairy: "பால் பண்ணை", bank: "வங்கி", post_office: "தபால் நிலையம்",
     shg: "SHG மையம்", moneylender: "வட்டிக்காரர்", medical: "மருத்துவமனை", school: "பள்ளி",
     temple: "கோவில்", panchayat: "பஞ்சாயத்து", market: "சந்தை", vegetable: "காய்கறி சந்தை",
-    bus_stand: "பேருந்து நிலையம்", mobile_tower: "மொபைல் கோபுரம்", workshop: "பட்டறை", tea_stall: "தேநீர் கடை"
+    bus_stand: "பேருந்து நிலையம்", mobile_tower: "மொபைல் கோபுரம்", workshop: "பட்டறை", tea_stall: "தேநீர் கடை",
+    save_deposit: "சேமிப்பு (டெபாசிட்)", withdraw: "பணம் எடுத்தல்", kcc_loan: "KCC கடன்",
+    sell_harvest: "அறுவடை விற்பனை", sell_vegetables: "காய்கறி விற்பனை", bus_ticket: "பேருந்து கட்டணம் (நகரம்)", tractor_service: "டிராக்டர் சர்வீஸ்", tea_snacks: "தேநீர் & சிற்றுண்டி",
+    kcc_loan_label: "KCC கடன் பெறுங்கள் (4%)", safe_affordable: "பாதுகாப்பானது மற்றும் மலிவானது", not_now: "இப்போது வேண்டாம்", 
+    sahukar_loan_label: "வட்டிக்காரரிடம் கடன் (24%)", debt_trap_warning: "கடன் பொறி அபாயம்!", 
+    go_to_bank: "வங்கிக்குச் செல்லுங்கள் (4%)", better_choice: "சிறந்த விருப்பம்",
+    bank_loan: "வங்கி கடன்", sahukar_loan: "வட்டிக்காரர் கடன்", decide_wisely: "நிதானமாக முடிவெடுங்கள்",
+    wallet: "பணப்பை", score: "மதிப்பெண்", debt: "கடன்", live: "லைவ்"
   },
 
   // ── Kannada ───────────────────────────────────────
   kn: {
     welcome: "ಸ್ವಾಗತ", choose_language: "ನಿಮ್ಮ ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ",
-    farming: "ಕೃಷಿ", trade: "ವ್ಯಾಪಾರ", labor: "ಕೂಲಿ", others: "ಇತರೆ / ಮಾತಾಡಿ",
+    farming: "ಕೃಷಿ", trade: "ವ್ಯಾಪಾರ", labor: "కూలి", others: "ಇತರೆ / ಮಾತಾಡಿ",
     month: "ತಿಂಗಳು", sowing_time: "ಬಿತ್ತನೆ ಸಮಯ", cash: "ನಗದು", loan: "ಸಾಲ",
-    bolo: "ಮಾತಾಡಿ", bolo_hint: "ಮಾತಾಡಿ ಮತ್ತು ಗಳಿಸಿ",
-    i_want_to_buy_seeds: "ನಾನು ಮಂಡಿಯಿಂದ ಬೀಜ ಖರೀದಿಸಲು ಬಯಸುತ್ತೇನೆ",
-    purchase_seeds: "ಬೀಜ ಖರೀದಿಸಿ", correct: "ಸರಿ", incorrect: "ತಪ್ಪು",
-    panchayat_intervention: "ಪಂಚಾಯತ್ ಹಸ್ತಕ್ಷೇಪ",
-    pm_kisan_msg: "ರೈತ ಸಹೋದರ, ನೀವು PM-ಕಿಸಾನ್ ಸಮ್ಮಾನ್ ನಿಧಿಗೆ ಅರ್ಹರಾಗಿದ್ದೀರಿ. ₹6,000 ಸಹಾಯ ಸಿಗುತ್ತದೆ.",
-    add_bank_account: "ಖಾತೆ ಸೇರಿಸಿ ಮತ್ತು ಲಾಭ ಪಡೆಯಿರಿ", ledger: "ಲೆಡ್ಜರ್", net_worth: "ಒಟ್ಟು ಆಸ್ತಿ", last_sync: "ಕೊನೆಯ ಸಿಂಕ್",
-    home: "ಮನೆ", neighbor1: "ಮನೆ ೧", neighbor2: "ಮನೆ ೨", grocery: "ದಿನಸಿ ಅಂಗಡಿ", cloth_shop: "ಬಟ್ಟೆ ಅಂಗಡಿ",
+    home: "ಮನೆ", neighbor1: "ಮನೆ 1", neighbor2: "ಮನೆ 2", grocery: "ದಿನಸಿ ಅಂಗಡಿ", cloth_shop: "ಬಟ್ಟೆ ಅಂಗಡಿ",
     electronics: "ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್", farm: "ಹೊಲ", seed_shop: "ಬೀಜ ಅಂಗಡಿ", fertilizer: "ಗೊಬ್ಬರ ಅಂಗಡಿ",
     cattle_market: "ಜಾನುವಾರು ಮಂಡಿ", dairy: "ಹಾಲಿನ ಡೈರಿ", bank: "ಬ್ಯಾಂಕ್", post_office: "ಅಂಚೆ ಕಚೇರಿ",
     shg: "SHG ಕೇಂದ್ರ", moneylender: "ಲೇವಾದೇವಿಗಾರ", medical: "ಆಸ್ಪತ್ರೆ", school: "ಶಾಲೆ",
     temple: "ದೇವಸ್ಥಾನ", panchayat: "ಪಂಚಾಯತ್", market: "ಮಂಡಿ", vegetable: "ತರಕಾರಿ ಮಾರ್ಕೆಟ್",
-    bus_stand: "ಬಸ್ ನಿಲ್ದಾಣ", mobile_tower: "ಮೊಬೈಲ್ ಟವರ್", workshop: "ವರ್ಕ್‌ಶಾಪ್", tea_stall: "ಚಹಾ ಅಂಗಡಿ"
+    bus_stand: "ಬಸ್ ನಿಲ್ದಾಣ", mobile_tower: "ಮೊಬೈಲ್ ಟವರ್", workshop: "ವರ್ಕ್‌ಶಾಪ್", tea_stall: "ಚಹಾ ಅಂಗಡಿ",
+    save_deposit: "ಉಳಿತಾಯ (ಠೇವಣಿ)", withdraw: "ಹಣ ಹಿಂಪಡೆಯುವಿಕೆ", kcc_loan: "KCC ಸಾಲ",
+    sell_harvest: "ಬೆಳೆ ಮಾರಾಟ", sell_vegetables: "ತರಕಾರಿ ಮಾರಾಟ", bus_ticket: "ಬಸ್ ಟಿಕೆಟ್ (ನಗರ)", tractor_service: "ಟ್ರಾಕ್ಟರ್ ಸರ್ವೀಸ್", tea_snacks: "ಚಹಾ ಮತ್ತು ತಿಂಡಿ",
+    kcc_loan_label: "KCC ಸಾಲ ಪಡೆಯಿರಿ (4%)", safe_affordable: "ಸುರಕ್ಷಿತ ಮತ್ತು ಅಗ್ಗ", not_now: "ಈಗ ಬೇಡ", 
+    sahukar_loan_label: "ಲೇವಾದೇವಿಗಾರರಿಂದ ಸಾಲ (24%)", debt_trap_warning: "ಸಾಲದ ಸುಳಿಯ ಅಪಾಯ!", 
+    go_to_bank: "ಬ್ಯಾಂಕ್‌ಗೆ ಹೋಗಿ (4%)", better_choice: "ಉತ್ತಮ ಆಯ್ಕೆ",
+    bank_loan: "ಬ್ಯಾಂಕ್ ಸಾಲ", sahukar_loan: "ಲೇವಾದೇವಿಗಾರರ ಸಾಲ", decide_wisely: "ಯೋಚಿಸಿ ನಿರ್ಧಾರ ಮಾಡಿ",
+    wallet: "ವಾಲೆಟ್", score: "ಸ್ಕೋರ್", debt: "ಸಾಲ", live: "ಲೈವ್"
   }
 };
- 
- 

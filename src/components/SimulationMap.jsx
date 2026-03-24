@@ -59,6 +59,10 @@ const MapMarkers = ({ activeLocation, onLocationClick, language, activeTourStep,
                 : language === 'mr' ? (loc.nameMr || loc.name)
                 : language === 'gu' ? (loc.nameGu || loc.name)
                 : language === 'bn' ? (loc.nameBn || loc.name)
+                : language === 'te' ? (loc.nameTe || loc.name)
+                : language === 'ta' ? (loc.nameTa || loc.name)
+                : language === 'kn' ? (loc.nameKn || loc.name)
+                : language === 'bh' ? (loc.nameHi || loc.name)
                 : loc.name}
               </span>
             </div>
@@ -148,16 +152,31 @@ export default function SimulationMap({ onOpenLedger, profile, activeModuleId, o
     // LOAN DECISION HUB
     if (action.type === 'loan' && !pendingDecision) {
       const loanOptions = isBank ? [
-        { label: language === 'hi' ? 'KCC लोन लें (4%)' : 'Take KCC Loan (4%)', sublabel: language === 'hi' ? 'सुरक्षित और सस्ता' : 'Safe and affordable', cost: action.amount, debtAdded: action.amount, waste: 0, isGood: true, type: 'loan' },
-        { label: language === 'hi' ? 'अभी नहीं' : 'Not now', sublabel: '', cost: 0, debtAdded: 0, waste: 0, isGood: false, type: 'cancel' }
+        { 
+          label: t.kcc_loan_label || (language === 'hi' ? 'KCC लोन लें (4%)' : 'Take KCC Loan (4%)'), 
+          sublabel: t.safe_affordable || (language === 'hi' ? 'सुरक्षित और सस्ता' : 'Safe and affordable'), 
+          cost: action.amount, debtAdded: action.amount, waste: 0, isGood: true, type: 'loan' 
+        },
+        { 
+          label: t.not_now || (language === 'hi' ? 'अभी नहीं' : 'Not now'), 
+          sublabel: '', cost: 0, debtAdded: 0, waste: 0, isGood: false, type: 'cancel' 
+        }
       ] : [
-        { label: language === 'hi' ? 'साहूकार से कर्ज (24%)' : 'Sahukar Loan (24%)', sublabel: language === 'hi' ? 'कर्ज जाल का खतरा' : 'Potential debt trap!', cost: action.amount, debtAdded: action.amount, waste: Math.round(action.amount * 0.2), isGood: false, type: 'loan' },
-        { label: language === 'hi' ? 'बैंक जाएं (4%)' : 'Go to Bank (4%)', sublabel: language === 'hi' ? 'बेहतर विकल्प' : 'Suggested choice', cost: 0, debtAdded: 0, waste: 0, isGood: true, type: 'nav_bank' }
+        { 
+          label: t.sahukar_loan_label || (language === 'hi' ? 'साहूकार से कर्ज (24%)' : 'Sahukar Loan (24%)'), 
+          sublabel: t.debt_trap_warning || (language === 'hi' ? 'कर्ज जाल का खतरा' : 'Potential debt trap!'), 
+          cost: action.amount, debtAdded: action.amount, waste: Math.round(action.amount * 0.2), isGood: false, type: 'loan' 
+        },
+        { 
+          label: t.go_to_bank || (language === 'hi' ? 'बैंक जाएं (4%)' : 'Go to Bank (4%)'), 
+          sublabel: t.better_choice || (language === 'hi' ? 'बेहतर विकल्प' : 'Suggested choice'), 
+          cost: 0, debtAdded: 0, waste: 0, isGood: true, type: 'nav_bank' 
+        }
       ];
 
       setPendingDecision({
-        title: language === 'hi' ? (isBank ? 'बैंक ऋण' : 'साहूकार का कर्ज') : (isBank ? 'Bank Loan' : 'Sahukar Loan'),
-        subtitle: language === 'hi' ? 'सोच-समझकर फैसला लें' : 'Choose wisely, beta',
+        title: isBank ? t.bank_loan : t.sahukar_loan,
+        subtitle: t.decide_wisely,
         options: loanOptions,
         action,
         locId

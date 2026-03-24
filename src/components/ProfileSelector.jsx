@@ -16,8 +16,18 @@ export default function ProfileSelector({ language, onSelect }) {
     {
       id: 'farmer',
       icon: '🚜',
-      labels: { hi: 'खेती', mr: 'शेती', en: 'Farming', gu: 'ખેતી', bh: 'खेती', bn: 'কৃষি', te: 'వ్యవసాయం', ta: 'விவசாயம்', kn: 'ಕೃಷಿ' },
-      bg: '#d1fae5',   // light green
+      labels: { 
+        hi: 'खेती', 
+        mr: 'शेती', 
+        en: 'Farming', 
+        gu: 'ખેતી', 
+        bh: 'खेती', 
+        bn: 'কৃষি', 
+        te: 'వ్యవసాయం', 
+        ta: 'விவசாயம்', 
+        kn: 'ಕೃಷಿ' 
+      },
+      bg: '#d1fae5',   
       iconBg: '#a7f3d0',
     },
     {
@@ -73,8 +83,8 @@ export default function ProfileSelector({ language, onSelect }) {
               >
                 {p.icon}
               </div>
-              <span className="text-lg font-bold text-slate-800">
-                {p.labels[language] || p.labels.hi}
+              <span className="text-lg font-black text-slate-800 tracking-tight">
+                {language === 'hi' && p.id === 'farmer' ? 'खेती' : (p.labels[language] || p.labels.hi)}
               </span>
             </button>
           ))}

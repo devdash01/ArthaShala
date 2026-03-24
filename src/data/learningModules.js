@@ -2,37 +2,76 @@ const learningModules = [
   {
     id: "seed_trap",
     icon: "🌾",
-    title: "Seed Trap – Sasta Aaj, Mehenga Kal",
+    titles: {
+      hi: "सीड ट्रैप - सस्ता आज, महंगा कल",
+      en: "Seed Trap – Cheap Today, Costly Tomorrow",
+      mr: "बियाणे सापळा - स्वस्त आज, महाग उद्या",
+      gu: "બિયારણ છટકું - સસ્તું આજે, મોંઘું કાલે",
+      bh: "बीज के जाल - सस्ता आज, महंगा कल",
+      bn: "বীজের ফাঁদ - আজ সস্তা, কাল দামী",
+      te: "విత్తన ఉచ్చు - ఈరోజు చౌక, రేపు ప్రియం",
+      ta: "விதை பொறி - இன்று மலிவு, நாளை விலை அதிகம்",
+      kn: "ಬೀಜದ ಬಲೆ - ಇಂದು ಅಗ್ಗ, ನಾಳೆ ದುಬಾರಿ"
+    },
     difficulty: "Easy",
     rewardType: "arthaScore",
     rewardAmount: 20,
-    // 3-screen story: action-first, visual-first
     screens: [
       {
         id: "intro",
-        type: "action", // action cards, not text
+        type: "action",
         visual: "🌾",
-        voiceover: "Naya season shuru ho gaya hai… beej aur khaad leni hai.",
-        title: "नया सीज़न शुरू! (New Season Begins!)",
-        subtitle: "अपनी पहली चॉइस करो (Make your first choice)",
+        voiceover: {
+          hi: "नया सीज़न शुरू हो गया है... बीज और खाद लेनी है।",
+          en: "The new season has begun... time to buy seeds and fertilizer.",
+          mr: "नवीन हंगाम सुरू झाला आहे... बियाणे आणि खते घ्यायची आहेत.",
+          gu: "નવી સીઝન શરૂ થઈ ગઈ છે... બિયારણ અને ખાતર લેવાનું છે.",
+          bh: "नया सीजन शुरू हो गइल बा... बीज आ खाद लेवे के बा।",
+          bn: "নতুন মরসুম শুরু হয়েছে... বীজ ও সার কিনতে হবে।",
+          te: "కొత్త సీజన్ మొదలైంది... విత్తనాలు మరియు ఎరువులు కొనాలి.",
+          ta: "புதிய பருவம் தொடங்கிவிட்டது... விதைகள் மற்றும் உரங்களை வாங்க வேண்டும்.",
+          kn: "ಹೊಸ ಸೀಸನ್ ಆರಂಭವಾಗಿದೆ... ಬೀಜ ಮತ್ತು ಗೊಬ್ಬರ ಖರೀದಿಸಬೇಕು."
+        },
+        title: {
+          hi: "नया सीज़न शुरू!",
+          en: "New Season Begins!",
+          mr: "नवीन हंगाम सुरू!",
+          gu: "નવી સીઝન શરૂ!",
+          bh: "नया सीजन शुरू!",
+          bn: "নতুন মরসুম শুরু!",
+          te: "కొత్త సీజన్ మొదలైంది!",
+          ta: "புதிய பருவம் ஆரம்பம்!",
+          kn: "ಹೊಸ ಸೀಸನ್ ಆರಂಭ!"
+        },
+        subtitle: {
+          hi: "अपनी पहली चॉइस करो",
+          en: "Make your first choice",
+          mr: "तुमची पहिली निवड करा",
+          gu: "તમારી પહેલી પસંદગી કરો",
+          bh: "अपन पहिला चुनाव करीं",
+          bn: "আপনার প্রথম পছন্দটি করুন",
+          te: "మీ మొదటి ఎంపికను చేసుకోండి",
+          ta: "உங்கள் முதல் விருப்பத்தைத் தேர்ந்தெடுங்கள்",
+          kn: "ನಿಮ್ಮ ಮೊದಲ ಆಯ್ಕೆಯನ್ನು ಮಾಡಿ"
+        },
         actions: [
           {
             id: "urea",
             icon: "💊",
-            label: "सस्ता यूरिया खरीदो",
-            sublabel: "Buy Cheap Urea",
+            label: { hi: "सस्ता यूरिया", en: "Cheap Urea", mr: "स्वस्त युरिया", gu: "સસ્તું યુરિયા", bh: "सस्ता यूरिया", bn: "সস্তা ইউরিয়া", te: "చౌక యూరియా", ta: "மலிவு விலை யூரியா", kn: "ಅಗ್ಗದ ಯೂರಿಯಾ" },
+            sublabel: { hi: "तुरंत फायदा", en: "Instant Results", mr: "त्वरीत फायदा", gu: "તરત જ ફાયદો", bh: "तुरंत फायदा", bn: "তাৎক্ষণিক ফল", te: "తక్షణ ఫలితాలు", ta: "உடனடி பலன்", kn: "ತಕ್ಷಣದ ಫಲಿತಾಂಶ" },
             cost: "₹800",
             color: "amber",
-            tag: "सस्ता / Cheap"
+            tag: { hi: "सस्ता", en: "Cheap", mr: "स्वस्त", gu: "સસ્તું", bh: "सस्ता", bn: "সস্তা", te: "చౌక", ta: "மலிவு", kn: "ಅಗ್ಗದ" }
           },
           {
             id: "hybrid",
             icon: "🌱",
-            label: "हाइब्रिड बीज खरीदो",
-            sublabel: "Buy Hybrid Seeds",
+            label: { hi: "हाइब्रिड बीज", en: "Hybrid Seeds", mr: "हायब्रीड बियाणे", gu: "હાઇબ્રિડ બિયારણ", bh: "हाइब्रिड बीज", bn: "সংকর বীজ", te: "హైబ్రిడ్ విత్తనాలు", ta: "வீரிய ரக விதைகள்", kn: "ಹೈಬ್ರಿಡ್ ಬೀಜಗಳು" },
+            sublabel: { hi: "लंबा फायदा", en: "Long-term Gain", mr: "दीर्घकालीन फायदा", gu: "લાંબા ગાળાનો ફાયદો", bh: "लंबा फायदा", bn: "দীর্ঘমেয়াদী লাভ", te: "దీర్ఘకాలిక ప్రయోజనం", ta: "நீண்ட கால பலன்", kn: "ದೀರ್ಘಾವಧಿಯ ಲಾಭ" },
             cost: "₹2,000",
             color: "green",
-            tag: "समझदारी / Smart"
+            tag: { hi: "समझदारी", en: "Smart", mr: "हुशारी", gu: "સમજદારી", bh: "समझदारी", bn: "বুদ্ধিমান", te: "తెలివైనది", ta: "புத்திசாலித்தனம்", kn: "ಜಾಣತನ" }
           }
         ]
       },
@@ -40,87 +79,105 @@ const learningModules = [
         id: "warning",
         type: "story",
         visual: "⚠️",
-        voiceover: "Sasta urea jaldi faida deta hai… par mitti ko nuksaan pahunchata hai.",
-        title: "एक ज़रूरी बात…",
-        subtitle: "(Something important...)",
-        message: "सस्ता यूरिया पहले अच्छी फसल देता है। लेकिन मिट्टी को धीरे-धीरे कमज़ोर करता है।",
-        messageEn: "Cheap urea gives good crop first time. But it slowly damages the soil.",
-        highlight: "mitti_weak"
+        voiceover: {
+          hi: "सस्ता यूरिया जल्दी फायदा देता है... पर मिट्टी को नुकसान पहुँचाता है।",
+          en: "Cheap urea gives quick results... but damages the soil.",
+          mr: "स्वस्त युरिया लवकर फायदा देतो... पण जमिनीचे नुकसान करतो.",
+          gu: "સસ્તું યુરિયા જલ્દી ફાયદો આપે છે... પણ જમીનને નુકસાન કરે છે.",
+          bh: "सस्ता यूरिया जल्दी फायदा देला... बाकिर माटी के नुकसान पहुँचावेला।",
+          bn: "সস্তা ইউরিয়া দ্রুত ফল দেয়... তবে মাটির ক্ষতি করে।",
+          te: "చౌక యూరియా త్వరగా ఫలితాన్ని ఇస్తుంది... కానీ మట్టిని దెబ్బతీస్తుంది.",
+          ta: "மலிவு விலை யூரியா விரைவான பலனைத் தருகிறது... ஆனால் மண்ணை சேதப்படுத்துகிறது.",
+          kn: "ಅಗ್ಗದ ಯೂರಿಯಾ ತಕ್ಷಣದ ಲಾಭ ನೀಡುತ್ತದೆ... ಆದರೆ ಮಣ್ಣನ್ನು ಹಾಳು ಮಾಡುತ್ತದೆ."
+        },
+        title: {
+          hi: "एक ज़रूरी बात...",
+          en: "Something Important...",
+          mr: "एक महत्वाची गोष्ट...",
+          gu: "એક મહત્વની વાત...",
+          bh: "एक गो जरूरी बात...",
+          bn: "একটি গুরুত্বপূর্ণ কথা...",
+          te: "ఒక ముఖ్యమైన విషయం...",
+          ta: "ஒரு முக்கியமான விஷயம்...",
+          kn: "ಒಂದು ಮುಖ್ಯವಾದ ವಿಷಯ..."
+        },
+        subtitle: {
+          hi: "मिट्टी और फसल",
+          en: "Soil and Crops",
+          mr: "जमीन आणि पीक",
+          gu: "જમીન અને પાક",
+          bh: "माटी आ फसल",
+          bn: "মাটি এবং ফসল",
+          te: "మట్టి మరియు పంటలు",
+          ta: "மண் மற்றும் பயிர்கள்",
+          kn: "ಮಣ್ಣು ಮತ್ತು ಬೆಳೆಗಳು"
+        }
       },
       {
         id: "bridge",
         type: "bridge",
         visual: "🗺️",
-        voiceover: "Ab isse apne gaon mein try karo.",
-        title: "अब इसे अपने गाँव में आज़माओ",
-        subtitle: "Now try this in your village",
-        cta: "🌾 Try on Map"
-      }
-    ],
-    simulation: {
-      steps: ["seed_shop", "fertilizer"],
-      highlights: ["seed_shop", "fertilizer", "farm"],
-      hint: "Yahan se apni fasal ki tayari karo",
-      outcomes: {
-        good: {
-          title: "शानदार फसल! 🌾",
-          titleEn: "Great Harvest!",
-          message: "Aapki zameen mazboot bani rahegi",
-          messageHi: "आपकी ज़मीन मज़बूत बनी रहेगी",
-          arthaChange: 15,
-          color: "green",
-          visual: "lush_field",
-          losses: null,
-          gains: [
-            { icon: "🌾", label: "Fasal", value: "+40% Yield" },
-            { icon: "💧", label: "Soil", value: "Healthy" },
-            { icon: "💰", label: "Income", value: "+₹25,000" }
-          ]
+        voiceover: {
+          hi: "अब इसे अपने गाँव में आज़माओ।",
+          en: "Now try this in your village.",
+          mr: "आता हे तुमच्या गावात वापरून पहा.",
+          gu: "હવે આને તમારા ગામમાં અજમાવી જુઓ.",
+          bh: "अब एहु के अपन गाँव में आजमाईं।",
+          bn: "এখন এটি আপনার গ্রামে চেষ্টা করে দেখুন।",
+          te: "ఇప్పుడు దీన్ని మీ గ్రామంలో ప్రయత్నించండి.",
+          ta: "இப்போது இதை உங்கள் கிராமத்தில் முயற்சி செய்யுங்கள்.",
+          kn: "ಈಗ ಇದನ್ನು ನಿಮ್ಮ ಗ್ರಾಮದಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ."
         },
-        mid: {
-          title: "Theek-Thaak Fasal",
-          titleEn: "Average Result",
-          message: "Kuch faida, kuch nuksaan",
-          messageHi: "कुछ फायदा, कुछ नुकसान",
-          arthaChange: 5,
-          color: "yellow",
-          visual: "fair_field",
-          losses: [
-            { icon: "🌾", label: "Crop Loss", value: "10%" },
-          ],
-          gains: [
-            { icon: "💰", label: "Income", value: "+₹10,000" }
-          ]
+        title: {
+          hi: "गाँव में आज़माएँ",
+          en: "Try in Village",
+          mr: "गावात वापरून पहा",
+          gu: "ગામમાં અજમાવો",
+          bh: "गाँव में आजमाईं",
+          bn: "গ্রামে চেষ্টা করুন",
+          te: "గ్రామంలో ప్రయత్నించండి",
+          ta: "கிராமத்தில் முயற்சி செய்யுங்கள்",
+          kn: "ಗ್ರಾಮದಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ"
         },
-        bad: {
-          title: "Seed Trap! ⚠️",
-          titleEn: "Soil Damaged",
-          message: "Zyada urea ne mitti ko kamzor kar diya",
-          messageHi: "ज़्यादा यूरिया ने मिट्टी को कमज़ोर कर दिया",
-          arthaChange: -20,
-          color: "red",
-          visual: "seized_field",
-          totalLoss: "₹10,000",
-          losses: [
-            { icon: "🌾", label: "Fasal / Crop Loss", value: "40%" },
-            { icon: "💧", label: "Mitti / Soil Fertility", value: "-60%" },
-            { icon: "💰", label: "Agle Season / Next Income", value: "-₹10,000" }
-          ],
-          gains: null
+        subtitle: {
+          hi: "देखें आपके फैसलों का क्या असर होता है",
+          en: "See how your decisions affect the farm",
+          mr: "तुमच्या निर्णयांचा शेतीवर काय परिणाम होतो ते पहा",
+          gu: "જુઓ તમારા નિર્ણયોની ખેતી પર શું અસર થાય છે",
+          bh: "देखीं रउआ फैसला के का असर होला",
+          bn: "দেখুন আপনার সিদ্ধান্তের খামারে কী প্রভাব পড়ে",
+          te: "మీ నిర్ణయాలు పొలంపై ఎలా ప్రభావం చూపుతాయో చూడండి",
+          ta: "உங்கள் முடிவுகள் பண்ணையை எவ்வாறு பாதிக்கின்றன என்று பாருங்கள்",
+          kn: "ನಿಮ್ಮ ನಿರ್ಧಾರಗಳು ಹೊಲದ ಮೇಲೆ ಹೇಗೆ ಪ್ರಭಾವ ಬೀರುತ್ತವೆ ಎಂದು ನೋಡಿ"
+        },
+        cta: {
+          hi: "🌾 मैप पर शुरू करें",
+          en: "🌾 Start on Map",
+          mr: "🌾 मॅपवर सुरू करा",
+          gu: "🌾 મેપ પર શરૂ કરો",
+          bh: "🌾 मैप पे शुरू करीं",
+          bn: "🌾 ম্যাপে শুরু করুন",
+          te: "🌾 మ్యాప్‌లో ప్రారంభించండి",
+          ta: "🌾 வரைபடத்தில் தொடங்குங்கள்",
+          kn: "🌾 ಮ್ಯಾಪ್‌ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಿ"
         }
-      },
-      images: {
-        present: "https://images.unsplash.com/photo-1500382017468-9049fee74a62?auto=format&fit=crop&w=800&q=80",
-        lush_field: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
-        fair_field: "https://images.unsplash.com/photo-1500382017468-9049fee74a62?auto=format&fit=crop&w=800&q=80",
-        seized_field: "https://images.unsplash.com/photo-1516710404095-23136209ed9e?auto=format&fit=crop&w=800&q=80"
       }
-    }
+    ]
   },
   {
     id: "loan_trap",
     icon: "💰",
-    title: "Loan Trap – Karz Ka Faisla",
+    titles: {
+      hi: "कर्ज का जाल - सही फैसला",
+      en: "Loan Trap – Smart Decision",
+      mr: "कर्जाचा विळखा - योग्य निर्णय",
+      gu: "દેવાનું છટકું - સાચો નિર્ણય",
+      bh: "कर्जा के जाल - सही फैसला",
+      bn: "ঋণের ফাঁদ - সঠিক সিদ্ধান্ত",
+      te: "అప్పుల ఊబి - సరైన నిర్ణయం",
+      ta: "கடன் பொறி - சரியான முடிவு",
+      kn: "ಸಾಲದ ಸುಳಿ - ಸರಿಯಾದ ನಿರ್ಧಾರ"
+    },
     difficulty: "Medium",
     rewardType: "arthaScore",
     rewardAmount: 30
